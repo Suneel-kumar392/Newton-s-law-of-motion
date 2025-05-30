@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newton's Laws of Motion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Newton's Laws of Motion</h1>
+    <p>Understanding the fundamentals of classical mechanics</p>
+  </header>
+
+  <main>
+    <section class="laws-container">
+      <div class="law-card" onclick="toggleCard(this)">
+        <h2>First Law</h2>
+        <p class="short">An object remains at rest or in motion unless acted upon.</p>
+        <p class="full hidden">Newton's First Law states that an object will remain at rest, or move at a constant speed in a straight line, unless acted upon by a force. This is also known as the law of inertia.</p>
+      </div>
+
+      <div class="law-card" onclick="toggleCard(this)">
+        <h2>Second Law</h2>
+        <p class="short">Force equals mass times acceleration.</p>
+        <p class="full hidden">Newton's Second Law explains how the velocity of an object changes when it is subjected to an external force. It’s expressed mathematically as F = ma.</p>
+      </div>
+
+      <div class="law-card" onclick="toggleCard(this)">
+        <h2>Third Law</h2>
+        <p class="short">Every action has an equal and opposite reaction.</p>
+        <p class="full hidden">Newton's Third Law states that for every action, there is an equal and opposite reaction. Forces always act in pairs.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Suneel | © 2025</p>
+  </footer>
+
+  <script >
+function toggleCard(card) {
+  const fullText = card.querySelector(".full");
+  const isHidden = fullText.classList.contains("hidden");
+
+  document.querySelectorAll(".full").forEach(p => p.classList.add("hidden"));
+
+  if (isHidden) {
+    fullText.classList.remove("hidden");
+  }
+}
+
+</script>
+</body>
+</html>

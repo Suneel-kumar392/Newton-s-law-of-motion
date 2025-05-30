@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #282c34;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.laws-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.law-card {
+  background: white;
+  padding: 1.5rem;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.law-card:hover {
+  transform: scale(1.03);
+}
+
+.law-card h2 {
+  margin-bottom: 0.5rem;
+  color: #0077cc;
+}
+
+.full {
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #282c34;
+  color: white;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .laws-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
